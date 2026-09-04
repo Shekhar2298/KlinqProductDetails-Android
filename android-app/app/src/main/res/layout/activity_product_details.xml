@@ -162,7 +162,8 @@
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:fontFamily="sans-serif-medium"
+                        android:fontFamily="sans-serif"
+                        android:includeFontPadding="false"
                         android:text="@string/color"
                         android:textColor="@color/ink"
                         android:textSize="15sp" />
@@ -183,9 +184,9 @@
                     android:layout_height="@dimen/swatch_row_height"
                     android:clipToPadding="false"
                     android:overScrollMode="never"
-                    android:paddingStart="10dp"
+                    android:paddingStart="0dp"
                     android:paddingTop="10dp"
-                    android:paddingEnd="10dp"
+                    android:paddingEnd="0dp"
                     android:paddingBottom="8dp"
                     android:scrollbars="none" />
 
