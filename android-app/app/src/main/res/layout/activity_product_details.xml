@@ -183,7 +183,9 @@
                     android:layout_height="@dimen/swatch_row_height"
                     android:clipToPadding="false"
                     android:overScrollMode="never"
+                    android:paddingStart="10dp"
                     android:paddingTop="10dp"
+                    android:paddingEnd="10dp"
                     android:paddingBottom="8dp"
                     android:scrollbars="none" />
 

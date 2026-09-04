@@ -9,7 +9,8 @@
     <dimen name="gallery_dot_active">9dp</dimen>
     <dimen name="gallery_dot_gap">4dp</dimen>
     <dimen name="swatch_size">52dp</dimen>
-    <dimen name="swatch_size_outer">62dp</dimen>
+    <dimen name="swatch_ring_outer">60dp</dimen>
+    <dimen name="swatch_item_width">78dp</dimen>
     <dimen name="swatch_row_height">76dp</dimen>
     <dimen name="action_bar_height">140dp</dimen>
 </resources>

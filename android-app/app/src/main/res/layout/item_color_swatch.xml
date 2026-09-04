@@ -1,18 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:layout_width="@dimen/swatch_size_outer"
+    android:layout_width="@dimen/swatch_item_width"
     android:layout_height="match_parent"
     android:foreground="?attr/selectableItemBackgroundBorderless"
-    android:padding="2dp">
+    android:gravity="center">
 
-    <com.google.android.material.imageview.ShapeableImageView
-        android:id="@+id/swatchImage"
-        android:layout_width="@dimen/swatch_size"
-        android:layout_height="@dimen/swatch_size"
-        android:adjustViewBounds="true"
-        android:scaleType="centerCrop"
-        app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.Klinq.Circle"
-        app:strokeColor="@color/ink"
-        app:strokeWidth="1dp" />
+    <FrameLayout
+        android:layout_width="@dimen/swatch_ring_outer"
+        android:layout_height="@dimen/swatch_ring_outer"
+        android:background="@drawable/bg_swatch_outer"
+        android:padding="2dp">
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/swatchImage"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:adjustViewBounds="true"
+            android:background="@drawable/bg_swatch_inner"
+            android:padding="3dp"
+            android:scaleType="centerCrop"
+            app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.Klinq.Circle"
+            app:strokeColor="@color/ink"
+            app:strokeWidth="1dp" />
+    </FrameLayout>
 </FrameLayout>
