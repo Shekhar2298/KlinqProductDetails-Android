@@ -1,13 +1,12 @@
 package com.klinq.productdetails.ui
 
-import android.graphics.Color
-import android.graphics.drawable.GradientDrawable
+import android.content.res.ColorStateList
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.ImageView
 import androidx.recyclerview.widget.RecyclerView
 import coil.load
+import com.google.android.material.imageview.ShapeableImageView
 import com.klinq.productdetails.R
 import com.klinq.productdetails.data.ProductOption
 
@@ -19,7 +18,7 @@ class ColorSwatchAdapter(
     private var selectedOptionId: String? = null
 
     class SwatchViewHolder(view: View) : RecyclerView.ViewHolder(view) {
-        val image: ImageView = view.findViewById(R.id.swatchImage)
+        val image: ShapeableImageView = view.findViewById(R.id.swatchImage)
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): SwatchViewHolder {
@@ -31,17 +30,11 @@ class ColorSwatchAdapter(
     override fun onBindViewHolder(holder: SwatchViewHolder, position: Int) {
         val option = options[position]
         val selected = option.optionId == selectedOptionId
-        val strokeColor = if (selected) {
-            holder.itemView.context.getColor(R.color.ink)
-        } else {
-            Color.TRANSPARENT
-        }
-
-        holder.image.background = GradientDrawable().apply {
-            shape = GradientDrawable.OVAL
-            setColor(Color.TRANSPARENT)
-            setStroke(if (selected) 2 else 1, strokeColor)
-        }
+        holder.image.strokeColor = ColorStateList.valueOf(
+            holder.itemView.context.getColor(R.color.ink),
+        )
+        holder.image.strokeWidth = holder.image.resources.displayMetrics.density *
+            if (selected) 2f else 1f
         val imageUrl = ImageUrlOptimizer.cachedVariantUrl(
             option.swatchUrl.ifBlank { option.images.firstOrNull().orEmpty() },
             cachedImageReference,

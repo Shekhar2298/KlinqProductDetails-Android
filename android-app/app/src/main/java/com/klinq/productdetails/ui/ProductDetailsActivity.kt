@@ -39,6 +39,7 @@ class ProductDetailsActivity : AppCompatActivity() {
     private lateinit var productName: TextView
     private lateinit var price: TextView
     private lateinit var sku: TextView
+    private lateinit var installmentSubtitle: TextView
     private lateinit var selectedColor: TextView
     private lateinit var informationContent: TextView
     private lateinit var informationChevron: ImageButton
@@ -80,6 +81,7 @@ class ProductDetailsActivity : AppCompatActivity() {
         productName = findViewById(R.id.productName)
         price = findViewById(R.id.productPrice)
         sku = findViewById(R.id.productSku)
+        installmentSubtitle = findViewById(R.id.installmentSubtitle)
         selectedColor = findViewById(R.id.selectedColor)
         informationContent = findViewById(R.id.informationContent)
         informationChevron = findViewById(R.id.informationChevron)
@@ -200,6 +202,10 @@ class ProductDetailsActivity : AppCompatActivity() {
             formatPrice(selectedOption?.price ?: product.finalPrice),
         )
         sku.text = getString(R.string.sku_format, product.sku)
+        installmentSubtitle.text = HtmlCompat.fromHtml(
+            getString(R.string.installment_subtitle),
+            HtmlCompat.FROM_HTML_MODE_LEGACY,
+        )
         selectedColor.text = selectedOption?.value
             ?: getString(R.string.select_color)
         informationContent.text = HtmlCompat.fromHtml(

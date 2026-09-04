@@ -9,4 +9,7 @@
     <color name="blush">#E7C8B9</color>
     <color name="line">#E8E0DA</color>
     <color name="success">#667451</color>
+    <color name="tabby_green">#38E7A7</color>
+    <color name="tabby_ink">#003C2E</color>
+    <color name="text_secondary_light">#AAA7A4</color>
 </resources>
