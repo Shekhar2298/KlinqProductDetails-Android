@@ -10,7 +10,7 @@
     <string name="color">Color</string>
     <string name="select_color">Select a color</string>
     <string name="select_color_accessibility">Select %1$s</string>
-    <string name="installment_title">4 interest-free payments</string>
+    <string name="installment_title">or 4 interest-free payments</string>
     <string name="installment_subtitle">0.88 KWD &lt;u&gt;Learn More&lt;/u&gt;</string>
     <string name="tabby">tabby</string>
     <string name="quantity">Quantity</string>
