@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="header_height">56dp</dimen>
+    <dimen name="screen_padding">16dp</dimen>
+    <dimen name="section_gap">25dp</dimen>
+    <dimen name="section_gap_small">10dp</dimen>
+    <dimen name="gallery_dots_height">32dp</dimen>
+    <dimen name="gallery_dot">8dp</dimen>
+    <dimen name="gallery_dot_active">9dp</dimen>
+    <dimen name="gallery_dot_gap">4dp</dimen>
+    <dimen name="swatch_size">52dp</dimen>
+    <dimen name="swatch_size_outer">62dp</dimen>
+    <dimen name="swatch_row_height">76dp</dimen>
+    <dimen name="action_bar_height">140dp</dimen>
+</resources>
