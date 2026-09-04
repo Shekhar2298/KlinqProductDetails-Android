@@ -258,10 +258,10 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:fontFamily="sans-serif-medium"
+                        android:fontFamily="sans-serif"
                         android:includeFontPadding="false"
                         android:text="@string/quantity"
-                        android:textColor="@color/ink"
+                        android:textColor="@color/ink_soft"
                         android:textSize="15sp" />
 
                     <LinearLayout
@@ -276,7 +276,8 @@
                             android:layout_height="38dp"
                             android:background="@drawable/bg_quantity_minus"
                             android:contentDescription="@string/decrease_quantity"
-                            android:padding="9dp"
+                            android:layout_marginEnd="8dp"
+                            android:padding="13dp"
                             android:src="@drawable/ic_remove"
                             android:tint="@color/white" />
 
@@ -298,7 +299,8 @@
                             android:layout_height="38dp"
                             android:background="@drawable/bg_quantity_plus"
                             android:contentDescription="@string/increase_quantity"
-                            android:padding="9dp"
+                            android:layout_marginStart="8dp"
+                            android:padding="13dp"
                             android:src="@drawable/ic_add"
                             android:tint="@color/white" />
                     </LinearLayout>
@@ -316,8 +318,8 @@
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
-                        android:fontFamily="sans-serif"
-                        android:textStyle="bold"
+                        android:fontFamily="sans-serif-medium"
+                        android:includeFontPadding="false"
                         android:text="@string/product_information"
                         android:textAllCaps="true"
                         android:textColor="@color/ink"
@@ -335,10 +337,10 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:fontFamily="sans-serif"
-                    android:lineSpacingExtra="6dp"
+                    android:lineSpacingExtra="3dp"
                     android:paddingBottom="18dp"
-                    android:textColor="@color/ink_soft"
-                    android:textSize="12sp" />
+                    android:textColor="@color/muted"
+                    android:textSize="13sp" />
             </LinearLayout>
         </LinearLayout>
     </androidx.core.widget.NestedScrollView>
