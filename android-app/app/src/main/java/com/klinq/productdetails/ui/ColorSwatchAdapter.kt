@@ -1,6 +1,5 @@
 package com.klinq.productdetails.ui
 
-import android.content.res.ColorStateList
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -29,12 +28,6 @@ class ColorSwatchAdapter(
 
     override fun onBindViewHolder(holder: SwatchViewHolder, position: Int) {
         val option = options[position]
-        val selected = option.optionId == selectedOptionId
-        holder.image.strokeColor = ColorStateList.valueOf(
-            holder.itemView.context.getColor(R.color.ink),
-        )
-        holder.image.strokeWidth = holder.image.resources.displayMetrics.density *
-            if (selected) 2f else 1f
         val imageUrl = ImageUrlOptimizer.cachedVariantUrl(
             option.swatchUrl.ifBlank { option.images.firstOrNull().orEmpty() },
             cachedImageReference,
