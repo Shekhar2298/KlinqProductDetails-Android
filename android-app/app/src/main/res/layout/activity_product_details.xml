@@ -194,14 +194,14 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="8dp"
                     android:background="@drawable/bg_payment"
-                    android:elevation="2dp"
+                    android:elevation="0dp"
                     android:gravity="center_vertical"
-                    android:minHeight="92dp"
+                    android:minHeight="@dimen/payment_card_height"
                     android:orientation="horizontal"
-                    android:paddingStart="16dp"
-                    android:paddingTop="14dp"
-                    android:paddingEnd="16dp"
-                    android:paddingBottom="14dp">
+                    android:paddingStart="@dimen/payment_card_padding_horizontal"
+                    android:paddingTop="@dimen/payment_card_padding_vertical"
+                    android:paddingEnd="@dimen/payment_card_padding_horizontal"
+                    android:paddingBottom="@dimen/payment_card_padding_vertical">
 
                     <LinearLayout
                         android:layout_width="0dp"
@@ -213,16 +213,18 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:fontFamily="sans-serif-medium"
+                            android:includeFontPadding="false"
                             android:text="@string/installment_title"
                             android:textColor="@color/ink"
-                            android:textSize="15sp" />
+                            android:textSize="13sp" />
 
                         <TextView
                             android:id="@+id/installmentSubtitle"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_marginTop="3dp"
+                            android:layout_marginTop="4dp"
                             android:fontFamily="sans-serif"
+                            android:includeFontPadding="false"
                             android:text="@string/installment_subtitle"
                             android:textColor="@color/ink"
                             android:textSize="14sp" />
@@ -231,8 +233,9 @@
                     <TextView
                         android:background="@drawable/bg_tabby_logo"
                         android:layout_width="wrap_content"
-                        android:layout_height="38dp"
+                        android:layout_height="36dp"
                         android:fontFamily="sans-serif-black"
+                        android:includeFontPadding="false"
                         android:gravity="center"
                         android:minWidth="84dp"
                         android:paddingStart="10dp"
