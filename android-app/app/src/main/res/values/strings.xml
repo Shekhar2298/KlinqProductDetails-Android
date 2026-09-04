@@ -7,7 +7,7 @@
     <string name="open_bag">Open bag</string>
     <string name="share_product">Share product</string>
     <string name="product_image">Product image</string>
-    <string name="color">Color</string>
+    <string name="color">Color:</string>
     <string name="select_color">Select a color</string>
     <string name="select_color_accessibility">Select %1$s</string>
     <string name="installment_title">or 4 interest-free payments</string>
