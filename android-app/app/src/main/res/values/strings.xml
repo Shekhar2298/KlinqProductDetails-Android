@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Klinq Product Details</string>
+    <string name="header_fallback">Once Collection Weekly</string>
+    <string name="go_back">Go back</string>
+    <string name="add_favorite">Add to favorites</string>
+    <string name="open_bag">Open bag</string>
+    <string name="share_product">Share product</string>
+    <string name="product_image">Product image</string>
+    <string name="color">Color</string>
+    <string name="select_color">Select a color</string>
+    <string name="select_color_accessibility">Select %1$s</string>
+    <string name="installment_title">4 interest-free payments</string>
+    <string name="installment_subtitle">0.88 KWD with</string>
+    <string name="tabby">tabby</string>
+    <string name="quantity">Quantity</string>
+    <string name="one">1</string>
+    <string name="decrease_quantity">Decrease quantity</string>
+    <string name="increase_quantity">Increase quantity</string>
+    <string name="product_information">Product information</string>
+    <string name="toggle_information">Toggle product information</string>
+    <string name="share">Share</string>
+    <string name="price_format">%1$s KWD</string>
+    <string name="sku_format">SKU: %1$s</string>
+    <string name="add_to_bag">Add to bag</string>
+    <string name="added_to_bag">Added to bag</string>
+    <string name="bag_ready">Your bag is ready for checkout.</string>
+    <string name="loading_product">Loading product</string>
+    <string name="error_title">We couldn’t load this product</string>
+    <string name="error_subtitle">Check your connection and try again.</string>
+    <string name="try_again">Try again</string>
+</resources>
