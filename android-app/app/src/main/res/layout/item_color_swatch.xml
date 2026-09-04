@@ -7,10 +7,11 @@
     android:gravity="center">
 
     <FrameLayout
+        android:id="@+id/swatchRing"
         android:layout_width="@dimen/swatch_ring_outer"
         android:layout_height="@dimen/swatch_ring_outer"
         android:background="@drawable/bg_swatch_outer"
-        android:padding="2dp">
+        android:padding="@dimen/swatch_border_width">
 
         <com.google.android.material.imageview.ShapeableImageView
             android:id="@+id/swatchImage"
@@ -18,10 +19,8 @@
             android:layout_height="match_parent"
             android:adjustViewBounds="true"
             android:background="@drawable/bg_swatch_inner"
-            android:padding="3dp"
+            android:padding="@dimen/swatch_image_inset"
             android:scaleType="centerCrop"
-            app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.Klinq.Circle"
-            app:strokeColor="@color/ink"
-            app:strokeWidth="1dp" />
+            app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.Klinq.Circle" />
     </FrameLayout>
 </FrameLayout>
