@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="cream">#FBFAF8</color>
+    <color name="white">#FFFFFF</color>
+    <color name="ink">#181615</color>
+    <color name="ink_soft">#5F5650</color>
+    <color name="muted">#817871</color>
+    <color name="sand">#F3EEE9</color>
+    <color name="blush">#E7C8B9</color>
+    <color name="line">#E8E0DA</color>
+    <color name="success">#667451</color>
+</resources>
