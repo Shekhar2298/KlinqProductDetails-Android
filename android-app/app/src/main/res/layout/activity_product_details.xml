@@ -216,7 +216,7 @@
                             android:includeFontPadding="false"
                             android:text="@string/installment_title"
                             android:textColor="@color/ink"
-                            android:textSize="13sp" />
+                            android:textSize="14sp" />
 
                         <TextView
                             android:id="@+id/installmentSubtitle"
@@ -227,7 +227,7 @@
                             android:includeFontPadding="false"
                             android:text="@string/installment_subtitle"
                             android:textColor="@color/ink"
-                            android:textSize="14sp" />
+                            android:textSize="13sp" />
                     </LinearLayout>
 
                     <TextView
